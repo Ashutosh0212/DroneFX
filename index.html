@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DroneFX - Aerial Video Simulation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-bold text-blue-600">DroneFX</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-4">
+                        <a href="index.html" class="text-gray-800 hover:text-blue-600 px-3 py-2 rounded-md font-medium">Home</a>
+                        <a href="#how-it-works" class="text-gray-800 hover:text-blue-600 px-3 py-2 rounded-md font-medium">How It Works</a>
+                        <a href="#about" class="text-gray-800 hover:text-blue-600 px-3 py-2 rounded-md font-medium">About</a>
+                        <a href="contact.html" class="text-gray-800 hover:text-blue-600 px-3 py-2 rounded-md font-medium">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-800 hover:text-blue-600">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 rounded-md text-gray-800 hover:text-blue-600 font-medium">Home</a>
+                <a href="#how-it-works" class="block px-3 py-2 rounded-md text-gray-800 hover:text-blue-600 font-medium">How It Works</a>
+                <a href="#about" class="block px-3 py-2 rounded-md text-gray-800 hover:text-blue-600 font-medium">About</a>
+                <a href="contact.html" class="block px-3 py-2 rounded-md text-gray-800 hover:text-blue-600 font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-blue-700">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative z-10 text-center px-4">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">Transform Videos into Drone Light Shows</h1>
+            <p class="text-xl md:text-2xl text-white mb-8">Experience the future of aerial entertainment with our innovative drone simulation technology</p>
+            <a href="#try-now" class="bg-white text-blue-600 px-8 py-3 rounded-full font-bold hover:bg-blue-50 transition duration-300">Try Now</a>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">How It Works</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="text-center">
+                    <div class="bg-blue-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl text-blue-600">1</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Upload Your Video</h3>
+                    <p class="text-gray-600">Simply upload any video you'd like to transform into a drone light show</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-blue-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl text-blue-600">2</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Specify Drone Count</h3>
+                    <p class="text-gray-600">Tell us how many drones you want to use in your simulation</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-blue-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl text-blue-600">3</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Get Your Simulation</h3>
+                    <p class="text-gray-600">Watch as our AI generates a stunning aerial choreography</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">About Us</h2>
+                    <p class="text-gray-600 mb-6">Developed by a team of IITians, we're pioneering the future of aerial entertainment by combining cutting-edge AI technology with drone choreography. Our mission is to make spectacular drone light shows accessible to everyone.</p>
+                    <p class="text-gray-600">Our advanced algorithms, built by top engineers from IIT, analyze your videos and generate optimal flight paths for each drone, ensuring a mesmerizing recreation of your content in the night sky.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4">Our Technology</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-center">
+                            <svg class="h-6 w-6 text-blue-600 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            AI-Powered Video Analysis
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="h-6 w-6 text-blue-600 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            Intelligent Path Generation
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="h-6 w-6 text-blue-600 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            Advanced Collision Prevention
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Examples Section -->
+    <section id="examples" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">See It In Action</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Original Video -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg transition-transform hover:scale-[1.02] duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-4">Original Video</h3>
+                        <div class="video-container rounded-lg overflow-hidden">
+                            <video 
+                                class="w-full"
+                                controls
+                                poster="https://placehold.co/600x400/darkblue/white/png?text=Original+Video"
+                            >
+                                <source src="path_to_your_video.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drone Simulation -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg transition-transform hover:scale-[1.02] duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-4">Drone Light Show Simulation</h3>
+                        <div class="video-container rounded-lg overflow-hidden">
+                            <video 
+                                class="w-full"
+                                controls
+                                poster="https://placehold.co/600x400/darkblue/white/png?text=Drone+Simulation"
+                            >
+                                <source src="path_to_simulation.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="mt-16 text-center">
+                <a href="contact.html" class="inline-flex items-center px-8 py-3 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition duration-300 group">
+                    Transform Your Video
+                    <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">DroneFX</h3>
+                    <p class="text-gray-400">Transforming videos into spectacular aerial displays</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#how-it-works" class="text-gray-400 hover:text-white">How It Works</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Connect With Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 15.274c-.393.88-1.233 1.575-2.247 1.916-.812.275-1.695.424-2.647.424-1.392 0-2.65-.318-3.775-.95-1.124-.633-1.87-1.708-2.235-3.225-.187-.772-.282-1.59-.282-2.453 0-1.392.318-2.65.95-3.775.633-1.124 1.708-1.87 3.225-2.235.772-.187 1.59-.282 2.453-.282 1.392 0 2.65.318 3.775.95 1.124.633 1.87 1.708 2.235 3.225.187.772.282 1.59.282 2.453 0 1.392-.318 2.65-.95 3.775-.633 1.124-1.708 1.87-3.225 2.235z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 DroneFX. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
